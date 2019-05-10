@@ -11,13 +11,13 @@ namespace Wk.DotNetCore.Perf
         private readonly Dictionary<string, object> _store;
 
         public Suspect()
-            : this(new Dictionary<string, object>(StringComparer.Ordinal))
+            : this(new Dictionary<string, object>(StringComparer.OrdinalIgnoreCase))
         {
         }
 
         public Suspect(Dictionary<string, object> store)
         {
-            _store = new Dictionary<string, object>(store, StringComparer.Ordinal);
+            _store = new Dictionary<string, object>(store, StringComparer.OrdinalIgnoreCase);
         }
         
         public T GetOrDefault<T>(string propertyName)
