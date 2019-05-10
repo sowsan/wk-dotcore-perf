@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Wk.DotNetCore.Perf": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
